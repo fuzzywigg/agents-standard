@@ -2,8 +2,8 @@
 agent_version: "3.2.0"
 project_type: "multi-domain-web3-platform"
 context_priority: "high"
-owner: "[PROJECT_NAME] Ecosystem"
-ens_identity: "[REDACTED_IDENTITY]"
+owner: "FUZZYWIGG-AI Ecosystem"
+ens_identity: "smtp.eth"
 last_updated: "2026-01-04"
 
 # YAML Frontmatter Configuration
@@ -40,17 +40,11 @@ memo_file: "./agentic_flows/scratchpad.txt"  # Shared coordination state
 postmortem_log: "./postmortem.md"  # Incident tracking and learning
 ---
 
-# AGENTS.md v3.2.0 — [PROJECT_NAME] Ecosystem
-
-> **⚠️ PUBLIC VERSION DISCLAIMER**
-> This document is a public version of the internal `agents.md` file using for operating the [PROJECT_NAME] ecosystem.
-> It contains operational guidelines, architectural patterns, and agent personas.
-> **No real credentials, sensitive keys, or specific infrastructure details are included in this file.**
-> Sections marked `[REDACTED]` or `[HIDDEN]` have been sanitized for public sharing.
+# AGENTS.md v3.2.0 — FUZZYWIGG-AI Ecosystem
 
 ## Executive Summary
 
-This document is the **persistent cognitive context** for all AI agents operating in the [PROJECT_NAME] ecosystem, anchored at **[REDACTED_IDENTITY]**. Unlike README.md (which explains the system to humans), AGENTS.md is the **operating manual for AI**—explicit, algorithmic, and designed to prevent drift in stateless environments.
+This document is the **persistent cognitive context** for all AI agents operating in the FUZZYWIGG-AI ecosystem, anchored at **smtp.eth**. Unlike README.md (which explains the system to humans), AGENTS.md is the **operating manual for AI**—explicit, algorithmic, and designed to prevent drift in stateless environments.
 
 The system unifies digital identity across Web2 (Gmail, Outlook, Google Calendar) and Web3 (ENS, MetaMask, NFT platforms). Multiple specialized agents collaborate through formal protocols to handle quantum computing, blockchain architecture, on-device security, 6G networking, data science, creative visualization, and strategic intelligence.
 
@@ -461,7 +455,7 @@ def process_transaction(tx: Transaction) -> TransactionResult:
 
 ```typescript
 function fetchUser(id: any): any {
-    # 'any' defeats the purpose of TypeScript
+    // 'any' defeats the purpose of TypeScript
     return fetch(`/api/users/${id}`).then(r => r.json());
 }
 ```
@@ -568,7 +562,7 @@ function UserProfile({ userId }) {
     }, [userId]);
     
     if (loading) return <div>Loading...</div>;
-    if (data) return <div>No data</div>;
+    if (!data) return <div>No data</div>;
     return <div>{data.name}</div>;
 }
 ```
@@ -1119,14 +1113,14 @@ To reduce parsing errors, agents must use **Structured JSON** when exchanging co
 
 ## PART 9: PREAMBLE & IDENTITY ANCHOR
 
-### 9.1 System Identity [REDACTED]
+### 9.1 System Identity
 
 | Asset | Value | Purpose |
 |-------|-------|---------|
-| **ENS Domain** | [REDACTED_IDENTITY] | Primary Web3 identity, cross-platform authentication |
-| **Primary Platform** | [REDACTED_PLATFORM] | Web3 community platform |
-| **AI Hub** | [REDACTED_AI_HUB] | Agent deployments and AI services |
-| **Infrastructure** | [REDACTED_HOSTING_PROVIDER] | Managed Hosting Environment (Treat details as sensitive) |
+| **ENS Domain** | smtp.eth | Primary Web3 identity, cross-platform authentication |
+| **Primary Platform** | nft2.me | Web3 community platform |
+| **AI Hub** | fuzzywigg.ai | Agent deployments and AI services |
+| **Infrastructure** | GoDaddy Deluxe Hosting | Linux cPanel (Treat details as sensitive) |
 
 ### 9.2 Project Portfolio
 
@@ -1134,7 +1128,7 @@ To reduce parsing errors, agents must use **Structured JSON** when exchanging co
 |---------|--------|----------|------------|
 | **Math Pentathlon** | Live & Stable | MEDIUM | React SPA, Three.js |
 | **Owl Visuals (Tyto alba)** | In Development | HIGH | Three.js, WebGL, procedural animation |
-| **[REDACTED_PLATFORM] Ecosystem** | Active Development | HIGH | Next.js, FastAPI, Solidity |
+| **NFT2.me Ecosystem** | Active Development | HIGH | Next.js, FastAPI, Solidity |
 | **Knowledge & Health Agents** | Planning | HIGH | LightRAG, Python backend, privacy-first |
 | **Quantum-Blockchain Agentic Team** | In Setup | CRITICAL | Cirq, Hardhat, 6G coordination |
 
@@ -1155,10 +1149,10 @@ To reduce parsing errors, agents must use **Structured JSON** when exchanging co
 
 **Hosting**:
 
-- [REDACTED_HOSTING_PROVIDER]
-- [REDACTED_CONTROL_PANEL]
+- GoDaddy Deluxe Hosting
+- cPanel file manager
 - AutoSSL for all domains
-- Nameservers: [REDACTED_NAMESERVERS]
+- Nameservers: ns03.domaincontrol.com, ns04.domaincontrol.com
 
 ### 10.2 Tech Stack Specification
 
@@ -1218,6 +1212,9 @@ npm run type-check
 # Solidity
 npx hardhat test
 npx hardhat coverage
+# Solidity
+npx hardhat test
+forge test --fuzz-runs 5000
 npx slither . --json
 
 # Mobile
@@ -1523,7 +1520,7 @@ JWT_SECRET=your-secret-here
 INFURA_API_KEY=your-key-here
 
 # .env (NEVER commit)
-DATABASE_URL=postgresql://db_user:db_pass@production-db-host/[PROJECT_DB]
+DATABASE_URL=postgresql://real-user:real-pass@prod-server/fuzzywigg
 JWT_SECRET=actual-secret-value
 INFURA_API_KEY=actual-api-key
 ```
@@ -1593,12 +1590,18 @@ Agents MAY propose changes to AGENTS.md when:
 |---------|------|---------|----------|
 | 1.0 | 2025-12-13 | Initial release (original AGENTS.md) | Human |
 | 2.0 | 2025-12-13 | Added execution modes, NFT data hygiene, recovery procedures | Human |
-| 3.0 | 2025-12-13 | Integrated best practices: latent space priming, chain-of-thought, domain protocols | Human |
-| **3.2.0** | **2026-01-04** | **Public release version based on internal v3.2.0 standard.** | **[PROJECT_NAME] Ecosystem** |
+| 3.0 | 2025-12-13 | Integrated best practices: latent space priming, persona engineering (RGB), chain-of-thought, few-shot patterns, multi-agent orchestration, 6G context, quantum/blockchain/mobile domain protocols | Human |
+| **3.0.1** | **2025-12-13** | **Patched & Added**: Device constraints, NIST PQ standards, multi-chain protocol, scratchpad state machine. | **Human** |
+| 3.1.0 | 2025-12-16 | Enhanced: Zapier/Automation Integration, Tool Safety Protocols, JSON Schema for messaging. | Antigravity |
+| **3.2.0** | **2026-01-04** | **Added 'The Wallet' - Comprehensive definitions of available external resources, APIs, LLM providers, and communication channels.** | **Antigravity** |
 
 ---
 
 ## PART 19: ENFORCEMENT & VALIDATION
+
+### 19.1 How Agents Are Validated
+
+**Before any output is delivered:**
 
 ### 19.1 How Agents Are Validated
 
@@ -1627,8 +1630,7 @@ An agent may produce brilliant, elegant code that violates a constraint. That ou
 
 ## PART 20: AVAILABLE RESOURCES & INTEGRATIONS (THE WALLET)
 
-This section defines the **Wallet** of verified tools, APIs, and integrations available to the agent.
-*Note: Specific keys and endpoints are configured in the private ecosystem environment.*
+This section defines the **Wallet** of verified tools, APIs, and integrations available to the agent. Agents may assume these resources are available for use within the defined constraints.
 
 ### 20.1 Cognitive & Language Models (The Brain Trust)
 
@@ -1670,11 +1672,88 @@ This section defines the **Wallet** of verified tools, APIs, and integrations av
 | **Pinata (IPFS)** | Decentralized Storage | NFT metadata hosting, static content |
 | **RPC Utils** | Blockchain Access | Ankr, Infura (via signed transactions) |
 
+### 20.5 Core Utility Standards (Reference Implementation)
+
+The following Python patterns are **verified** and **recommended** for all agents building new tools. They derive from the production `Backlink` architecture.
+
+#### 20.5.1 Structured Prompt Engineering Pattern
+
+Use the `PromptEngineer` class pattern to construct prompts. This enforces the "Role-Goal-Constraint" framework programmatically.
+
+**Standard Class Reference:**
+
+```python
+class PromptEngineer:
+    """
+    Constructs LLM prompts using DeepMind-style principles:
+    1. Context Anchor (Role + Goal)
+    2. Constraint Stack (Boundaries)
+    3. Format Specification (JSON Schema)
+    4. Evidence Demand (Assumptions/Trace)
+    """
+    def __init__(self, role: str, goal: str):
+        self.role = role
+        self.goal = goal
+        self.constraints = []
+        self.context_items = []
+        
+    def add_constraint(self, constraint: str):
+        self.constraints.append(constraint)
+        
+    def set_output_format(self, schema_desc: str):
+        self.format_instruction = f"OUTPUT: VALID JSON adhering to: {schema_desc}"
+        
+    def build_system_prompt(self) -> str:
+        # returns formatted prompt string
+        pass
+```
+
+#### 20.5.2 "Stigmergy" Memory Pattern (Markdown Graph)
+
+Agents should prefer flat-file Markdown graphs for shared state over complex databases when possible. This is known as the **Honeycomb Pattern**.
+
+**Data Structure:**
+
+- **Entity**: A single `.md` file (e.g., `solar_flare.md`).
+- **Relationship**: A line in the file: `- VERB [[TargetEntity]] context`.
+- **Observation**: Free text blocks within the file.
+
+**Example File Content (`solar_flare.md`):**
+
+```markdown
+# Solar Flare
+Major X-class flare detected at 14:00 UTC.
+
+## Relationships
+- CAUSED [[RadioBlackout]] in North America
+- DETECTED_BY [[NASA_SOHO]] at L1 point
+```
+
+#### 20.5.3 NestBrowse Pattern (Outer/Inner Loop)
+
+For complex web tasks, agents must use the **NestBrowse** architecture to separate "Navigation" from "Extraction".
+
+**Architecture:**
+
+- **Outer Loop (Reasoning)**: Uses a high-intelligence model (e.g., Gemini 1.5 Pro) to decide *what* to do next (Click, Search, Scroll). It sees the "Big Picture."
+- **Inner Loop (Extraction)**: Uses a cost-effective or local model (e.g., LocalAI, Gemini Flash) to parse specific page content and return structured JSON.
+
+**Protocol:**
+
+1. Outer Loop receives Goal: "Find trending music venues in Austin."
+2. Outer Loop decides: `{"tool": "maps_search", "query": "venues in Austin"}`
+3. System executes search, gets raw HTML/Text.
+4. Inner Loop parses raw text -> `[{"name": "Mohawk", "rating": 4.5}, ...]`
+5. Inner Loop returns JSON to Outer Loop.
+6. Outer Loop continues or finishes.
+
+**Why:** Prevents "context flooding" by filtering raw web noise before it reaches the reasoning brain.
+
 ---
 
 ## PART 21: CLOSING STATEMENT
 
-This AGENTS.md file is the **persistent cognitive context** for all AI agents in the [PROJECT_NAME] ecosystem. It is not just documentation—it is a contract between human intent and machine execution.
+This AGENTS.md file is the **persistent cognitive context** for all AI agents in the FUZZYWIGG-AI ecosystem. It is not just documentation—it is a contract between human intent and machine execution.
 
 **Read this file before every task.** Refer to it when uncertain. Escalate when constraints are unclear. Update it as the project evolves.
 
@@ -1682,10 +1761,10 @@ The goal is simple: **Turn stateless AI into reliable, trustworthy collaborators
 
 ---
 
-**Document Version**: 3.2.0
-**Last Updated**: 2026-01-04
-**Owner**: [PROJECT_NAME] Ecosystem ([REDACTED_IDENTITY])
-**Enforcement Level**: ABSOLUTE
+**Document Version**: 3.2.0  
+**Last Updated**: 2026-01-04  
+**Owner**: FUZZYWIGG-AI Ecosystem (smtp.eth)  
+**Enforcement Level**: ABSOLUTE  
 **Status**: 🟢 PRODUCTION READY
 
 *This file is living documentation. Treat it as such.*
