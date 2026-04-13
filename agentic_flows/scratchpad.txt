@@ -1,0 +1,10 @@
+## Agentic Flows Scratchpad
+# Runtime artifact — append-only during agent sessions
+# This file is the shared coordination state for multi-agent workflows.
+# See AGENTS.md Part 16.2 for the state machine and usage protocol.
+# See AGENTS.md Part 8.4.4 for the scratchpad state machine diagram.
+#
+# FORMAT: Append timestamped markdown blocks. Never overwrite.
+# TAGS: Use [ZAP:scenarioname] to trigger Zapier automations.
+#
+# --- ENTRIES BEGIN BELOW ---
