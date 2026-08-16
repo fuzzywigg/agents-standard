@@ -1,15 +1,9 @@
-# Agentic Intelligence Standard (Public)
+# agents-standard
 
-This repository contains the public-facing operational protocols for the [PROJECT_NAME] AI Ecosystem.
+Public markdown dump. Default branch is `alpha`. Not a product, runtime, or app.
 
-## Overview
+The only real artifact is [`AGENTS.md`](AGENTS.md) v3.2.0 — FUZZYWIGG-AI agent operating protocol. Paste it into a system prompt if you want that protocol.
 
-The `AGENTS.md` file serves as the **persistent cognitive context** for ensuring reliable, high-quality, and secure interactions with Large Language Models (LLMs) used in our agentic workflows.
+Also on the tree: `CLAUDE.md`, hydration notes, an empty `postmortem.md`, a scratchpad stub, and a Copilot agent file. No CI, no LICENSE, no workflows.
 
-## Usage
-
-Include the contents of `AGENTS.md` in your system prompt or context window to align agent behavior with these standards.
-
-## Security
-
-This public version has been sanitized to remove specific infrastructure credentials and identity anchors.
+Sibling archive: [g0p-agents](https://github.com/fuzzywigg/g0p-agents) (older v2.2 prompts + CI templates).
