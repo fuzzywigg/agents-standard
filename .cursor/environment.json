@@ -1,0 +1,4 @@
+{
+  "name": "agents-standard",
+  "install": "test -f README.md && test -f AGENTS.md && test -f CLAUDE.md && test -f .github/workflows/ci.yml"
+}

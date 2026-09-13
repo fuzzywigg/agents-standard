@@ -1,0 +1,38 @@
+# markdownlint configuration — thin CI for a docs-only standards dump
+# Intentional AGENTS.md style (long tables, bare URLs, emphasis callouts) is allowed.
+# Ref: https://github.com/DavidAnson/markdownlint
+# Backlog: docs/hydration-issues.md Issue 12
+
+default: true
+
+# Long protocol lines / tables / code are intentional
+MD013: false
+
+# Duplicate headings appear across Parts and issue templates (AGENTS.md has intentional Part 19.1 duplicate)
+MD024: false
+
+# Multiple H1s (title + metadata blocks)
+MD025: false
+
+# Hard tabs in historic Copilot agent file / pasted tables
+MD010: false
+
+# Blanks around fences/lists are uneven in legacy hydration docs
+MD031: false
+MD032: false
+
+# Inline HTML (rare) and bare URLs in governance tables
+MD033: false
+MD034: false
+
+# Emphasis used as callout labels (not headings)
+MD036: false
+
+# Fenced blocks without language tags (diagrams, examples)
+MD040: false
+
+# Strong/em style inconsistency in legacy copy
+MD050: false
+
+# Compact table pipes in AGENTS.md and backlog tables
+MD060: false
