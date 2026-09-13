@@ -547,17 +547,19 @@ Create `docs/usage-examples.md` with:
 | Phase | Issue | Surface | Priority | Status |
 |-------|-------|---------|----------|--------|
 | 1 | #1 Add LICENSE | copilot | P1 | 🔲 Open |
-| 1 | #2 Fix README placeholder | copilot | P1 | 🔲 Open |
+| 1 | #2 Fix README placeholder | copilot | P1 | ✅ Done (`PROJECT_NAME` removed; thin badges added) |
 | 1 | #3 Add CLAUDE.md | copilot | P1 | ✅ Done in hydration pass |
-| 1 | #4 Add .gitignore | copilot | P1 | 🔲 Open |
-| 1 | #5 Runtime stubs (scratchpad, postmortem) | copilot | P1 | 🔲 Open |
-| 2 | #6 CI workflow (Markdown lint + link check) | copilot | P2 | 🔲 Open |
+| 1 | #4 Add .gitignore | copilot | P1 | ✅ Present on `alpha` |
+| 1 | #5 Runtime stubs (scratchpad, postmortem) | copilot | P1 | ✅ Stubs present (no invented live content) |
+| 2 | #6 CI workflow (Markdown lint + link check) | copilot | P2 | ✅ Thin CI in Wave 2 (`ci.yml`) |
 | 2 | #7 CONTRIBUTING.md | copilot | P2 | 🔲 Open |
 | 2 | #8 SECURITY.md | copilot | P2 | 🔲 Open |
 | 2 | #9 GitHub issue + PR templates | copilot | P2 | 🔲 Open |
 | 2 | #10 CODEOWNERS + branch protection | browser-claude | P2 | 🔲 Open |
 | 2 | #11 CHANGELOG.md | copilot | P2 | 🔲 Open |
-| 3 | #12 markdownlint config | copilot | P3 | 🔲 Open |
+| 3 | #12 markdownlint config | copilot | P3 | ✅ Present (`.markdownlint.yaml`, relaxed for AGENTS.md) |
 | 3 | #13 Usage examples in docs/ | copilot | P3 | 🔲 Open |
 
 **Total: 13 issues | 3 surfaces (copilot, browser-claude, human-deferred) | 3 phases**
+
+> Status column refreshed 2026-09-13 (Wave 2 thin docs/CI readiness). Issue bodies above remain historical specs.

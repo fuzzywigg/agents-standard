@@ -50,15 +50,17 @@ alpha (default — treat as main for this repo)
 ### Validation Commands
 
 ```bash
-# Markdown lint (install if needed)
-npx markdownlint-cli "**/*.md" --ignore node_modules
+# Markdown lint (matches CI)
+npx markdownlint-cli2 "**/*.md" --config .markdownlint.yaml
 
-# Check for broken internal links
-npx markdown-link-check README.md AGENTS.md CLAUDE.md
+# Link check (matches CI; GitHub token optional for rate limits)
+lychee --verbose --no-progress '**/*.md'
 
-# Spell check (optional)
+# Spell check (optional, not in CI)
 npx cspell "**/*.md"
 ```
+
+CI workflow: `.github/workflows/ci.yml` (lint + lychee) on PR/push to `alpha`.
 
 ### No Build, No Tests
 
@@ -83,17 +85,15 @@ When updating `AGENTS.md`:
 
 ---
 
-## Known Gaps (as of 2026-04-13)
+## Known Gaps (as of 2026-09-13)
 
 These are tracked in `docs/hydration-issues.md` and should be converted to GitHub Issues:
 
 - No LICENSE file
-- No CI/CD workflows
 - No issue/PR templates
 - No CONTRIBUTING.md or SECURITY.md
-- `README.md` has `[PROJECT_NAME]` placeholder
-- `agentic_flows/scratchpad.txt` referenced in AGENTS.md frontmatter but not present
-- `postmortem.md` referenced in AGENTS.md frontmatter but not present
+- Thin CI exists (`.github/workflows/ci.yml`); full hardening items remain in the backlog
+- `agentic_flows/scratchpad.txt` and `postmortem.md` stubs are present (do not invent live incident content)
 
 See `docs/hydration-issues.md` for the full prioritized issue backlog.
 
@@ -111,4 +111,4 @@ See `docs/hydration-issues.md` for the full prioritized issue backlog.
 
 ---
 
-*Last updated: 2026-04-13 | Owner: copilot (hydration pass) | Edit policy: Agent-editable*
+*Last updated: 2026-09-13 | Owner: cursor (thin docs/CI readiness) | Edit policy: Agent-editable*
